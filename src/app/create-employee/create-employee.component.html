@@ -1,0 +1,30 @@
+<div class="container" style="width: 500px;">
+    <h3 style="text-align: center;">Create Employee</h3>
+    <form [hidden]="submitted" #createEmployee="ngForm" (ngSubmit)="onSubmit()" novalidate>
+        <hr/>
+        <hr/>
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" #fname="ngModel" [class.is-invalid]="fname.invalid && fname.touched" name="firstName" required [(ngModel)]="model.firstName">
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" #lname="ngModel" [class.is-invalid]="lname.invalid && lname.touched" name="lastName" required [(ngModel)]="model.lastName">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" #ename="ngModel" [class.is-invalid]="ename.invalid && ename.touched" name="emailId" required [(ngModel)]="model.emailId">
+        </div>
+
+        <button [disabled]="createEmployee.form.invalid" class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>
+<div [hidden]="!submitted" class="container py-2 ">
+    <hr/>
+    <h1 class="jumbotron" style="text-align: center;">You submitted Successfully!</h1>
+    <div>
+        <button class="btn btn-primary active float-left " [routerLink]="['/employees']" routerLinkActive="active">Goto Employee List</button>
+        <button class="btn btn-primary active float-right" (click)="addMore()">Add More</button>
+    </div>
+</div>

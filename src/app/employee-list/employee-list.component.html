@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 style="text-align: center;">Employee List</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{employee.firstName}}</td>
+                    <td>{{employee.lastName}}</td>
+                    <td>{{employee.emailId}}</td>
+                    <td><button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+                        <button [routerLink]="['/update',employee.id]" routerLinkActive="active" class="btn btn-info ml-2 mr-2">Update</button>
+                        <button [routerLink]="['/details', employee.id]" class="btn btn-primary">Details</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
