@@ -22,5 +22,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## images
+# images
+## Create Employee
 ![Create Employee](/images/empcreate.png)
+
+## Employee List
+![Employee List](/images/emplist.png)
+
+## Employee update
+![Employee update](/images/empupdate.png)
+
+## Employee Details
+![Employee Details](/images/empdetails.png)
