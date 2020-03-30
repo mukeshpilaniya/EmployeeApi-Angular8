@@ -22,6 +22,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+# images
+## Create Employee
+![Create Employee](/images/empcreate.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Employee List
+![Employee List](/images/emplist.png)
+
+## Employee update
+![Employee update](/images/empupdate.png)
+
+## Employee Details
+![Employee Details](/images/empdetails.png)
