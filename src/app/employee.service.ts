@@ -10,7 +10,7 @@ export class EmployeeService {
 
   constructor(private http: HttpClient) { }
 
-  private baseUrl = "http://localhost:8080/api/v1";
+  private baseUrl = "http://localhost:8082/api/v1";
 
   // fetch all employees
   public getAllEmployee(): Observable<any> {
